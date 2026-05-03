@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="cs">
 
 <head>
-    <title>Moje stránka</title>
+    <meta charset="UTF-8">
+    <title>Portfolio — bonnie21cz</title>
     <link rel="icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/mujstyl.css">
 </head>
 
@@ -12,94 +13,105 @@
     <canvas id="hyperspace"></canvas>
 
     <div class="container">
-        <header>
 
+        <div class="statusbar">
+            <span class="site-id">bonnie21cz.github.com</span>
+            <div class="sb-right">
+                <span class="online">online</span>
+                <span>jan pulec · 2026</span>
+            </div>
+        </div>
+
+        <header>
+            <h3><i>bonnie21cz.github.com</i></h3>
         </header>
 
         <nav class="topmenu">
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="aboutme.html">ABOUT ME</a></li>
-                <li><a href="portfolio.html" class="selected">PORTFOLIO</a></li>
-                <li><a href="posts.html">BLOG</a></li>
-                <li><a href="fun.html">FUN</a></li>
-                <li><a href="links.html">LINKS</a></li>
+                <li><a href="index.html"><span class="tab-n">01:</span>home</a></li>
+                <li><a href="aboutme.html"><span class="tab-n">02:</span>about me</a></li>
+                <li><a href="portfolio.html" class="selected"><span class="tab-n">03:</span>portfolio</a></li>
+                <li><a href="posts.html"><span class="tab-n">04:</span>blog</a></li>
+                <li><a href="fun.html"><span class="tab-n">05:</span>fun</a></li>
+                <li><a href="links.html"><span class="tab-n">06:</span>links</a></li>
             </ul>
         </nav>
 
         <div class="container-in">
-
             <div class="articles">
+
                 <article>
                     <h2 id="uvod">Portfolio</h2>
                     <hr>
                     Zde uvidíš mojí práci a projekty, na kterých jsem v minulosti pracoval. <b>Všechno</b>, co tu je,
-                    jsem
-                    vytvořil <b>jen já sám</b>, jediná vyjímka jsou samotné textury pro VFX. (Pokud není jinak uvedeno.)
+                    jsem vytvořil <b>jen já sám</b>, jediná výjimka jsou samotné textury pro VFX. (Pokud není jinak uvedeno.)
                     <br><br>
-                    Snad se ti to bude líbít, ať už jsi potenciální zaměstnavatel, nebo jen nekdo koho to proste zajima. :)
-                    Převážně tu uvidíš jen moje Roblox projekty, na nic jiného zatím nejsem dostatečně hrdý abych to
-                    jsem dal.
+                    Snad se ti to bude líbít, ať už jsi potenciální zaměstnavatel, nebo jen někdo koho to prostě zajímá. :)
+                    Převážně tu uvidíš jen moje Roblox projekty, na nic jiného zatím nejsem dostatečně hrdý abych to dal.
 
                     <h3>Legenda</h3>
-                    <i style="color: rgb(88, 88, 88);">(Klikni na věc která tě zajímá, a budeš tam přesunut)</i> <br>
+                    <i style="color: var(--text-dim);">(Klikni na věc která tě zajímá, a budeš tam přesunut)</i>
+                    <br><br>
                     <b>1. <a href="#uvod">Úvod</a></b> <br>
                     <b>2. <a href="#minulezakazky">Minulé zakázky</a></b> <br>
-                    ├── a. <a href="#lse">Lítání + efekt</a> <br>
-                    └── b. <a href="#ss">Super speed efekt</a> <br>
+                    &nbsp;&nbsp;&nbsp;├── a. <a href="#lse">Lítání + efekt</a> <br>
+                    &nbsp;&nbsp;&nbsp;└── b. <a href="#ss">Super speed efekt</a> <br>
                     <b>3. <a href="#vlastniprojekty">Vlastní projekty</a></b> <br>
-                    ├── a. <a href="#cm">Celestial miners</a> <br>
-                    ├── b. <a href="#er">Eggzy Remastered</a> <br>
-                    └── c. <a href="#ob">One block</a>
+                    &nbsp;&nbsp;&nbsp;├── a. <a href="#cm">Celestial Miners</a> <br>
+                    &nbsp;&nbsp;&nbsp;├── b. <a href="#er">Eggzy Remastered</a> <br>
+                    &nbsp;&nbsp;&nbsp;└── c. <a href="#ob">One Block</a>
                 </article>
+
                 <article>
                     <h2 id="minulezakazky">Minulé zakázky</h2>
                     <hr>
-                    Dělal jsem hromadu zakázek, ale tady je asi jediná která je aktualní tím, že využívá mé schopnosti v
+                    Dělal jsem hromadu zakázek, ale tady je asi jediná která je aktuální tím, že využívá mé schopnosti v
                     programování a ve VFX.
-                    <br><br>
+
                     <h3 id="lse">Lítání s efektem</h3>
                     <br>
                     <video width="480" height="270" controls>
                         <source src="video/litani.mp4" type="video/mp4">
                         (Pokud tohle vidíš, tvůj prohlížeč nepodporuje přehrávání videa.)
                     </video>
-                    <br><br>
+
                     <h3 id="ss">Superspeed</h3>
-                    Do stejné hry jsem dělal i tento "Super-speed" efekt;
+                    Do stejné hry jsem dělal i tento "Super-speed" efekt:
                     <br><br>
                     <video width="480" height="270" controls>
                         <source src="video/superspeed.mp4" type="video/mp4">
                         (Pokud tohle vidíš, tvůj prohlížeč nepodporuje přehrávání videa.)
                     </video>
                 </article>
+
                 <article>
-                    <h2 id="vlastniprojekty">Vlastní Projekty</h2>
+                    <h2 id="vlastniprojekty">Vlastní projekty</h2>
                     <hr>
-                    Zde jsou moje vlastní projekty na kterých jsem pracovál sám (pokud není jinak uvedeno.) z většiny
-                    tam budou robloxové hry ale i jiné věci (Jako například tato stránka!)
-                    <br>
-                    <u><h3 id="cm">Celestial miners</h3></u>
-                    Celestial miners jako nápad jsem dostal před několika lety, i před tím než jsem se pořádně vyznal v
-                    programovaní obecně a vůbec už ne v roblox syntaxu nebo systému. Takže první věc kterou jsem udělal,
-                    když jsem tyto schopnosti nabral, je začal na tom pracovat.
-                    <br><br>
-                    ((((FOTKY SEM))))
+                    Zde jsou moje vlastní projekty na kterých jsem pracoval sám (pokud není jinak uvedeno.) Z většiny
+                    tam budou robloxové hry ale i jiné věci (jako například tato stránka!)
 
-                    <u><h3 id="er">Eggzy Remastered</h3></u>
-                    Celestial miners jako nápad jsem dostal před několika lety, i před tím než jsem se pořádně vyznal v
-                    programovaní obecně a vůbec už ne v roblox syntaxu nebo systému. Takže první věc kterou jsem udělal,
+                    <h3 id="cm">Celestial Miners</h3>
+                    Celestial Miners jako nápad jsem dostal před několika lety, i před tím než jsem se pořádně vyznal v
+                    programování obecně a vůbec už ne v roblox syntaxu nebo systému. Takže první věc kterou jsem udělal,
                     když jsem tyto schopnosti nabral, je začal na tom pracovat.
                     <br><br>
-                    ((((FOTKY SEM))))
+                    <i style="color: var(--text-dim);">((fotky brzy))</i>
 
-                    <u><h3 id="ob">One block</h3></u>
-                    Celestial miners jako nápad jsem dostal před několika lety, i před tím než jsem se pořádně vyznal v
-                    programovaní obecně a vůbec už ne v roblox syntaxu nebo systému. Takže první věc kterou jsem udělal,
+                    <h3 id="er">Eggzy Remastered</h3>
+                    Celestial Miners jako nápad jsem dostal před několika lety, i před tím než jsem se pořádně vyznal v
+                    programování obecně a vůbec už ne v roblox syntaxu nebo systému. Takže první věc kterou jsem udělal,
                     když jsem tyto schopnosti nabral, je začal na tom pracovat.
                     <br><br>
-                    ((((FOTKY SEM))))
+                    <i style="color: var(--text-dim);">((fotky brzy))</i>
+
+                    <h3 id="ob">One Block</h3>
+                    Celestial Miners jako nápad jsem dostal před několika lety, i před tím než jsem se pořádně vyznal v
+                    programování obecně a vůbec už ne v roblox syntaxu nebo systému. Takže první věc kterou jsem udělal,
+                    když jsem tyto schopnosti nabral, je začal na tom pracovat.
+                    <br><br>
+                    <i style="color: var(--text-dim);">((fotky brzy))</i>
                 </article>
+
             </div>
         </div>
 
@@ -107,7 +119,6 @@
             &copy; JAN PULEC 2026
         </footer>
     </div>
-
 
     <script src="js/hyperspace_pozadi.js"></script>
 </body>

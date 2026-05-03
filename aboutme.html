@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="cs">
 
 <head>
-    <title>Moje stránka</title>
+    <meta charset="UTF-8">
+    <title>About Me — bonnie21cz</title>
     <link rel="icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/mujstyl.css">
 </head>
 
@@ -12,23 +13,31 @@
     <canvas id="hyperspace"></canvas>
 
     <div class="container">
+
+        <div class="statusbar">
+            <span class="site-id">bonnie21cz.github.com</span>
+            <div class="sb-right">
+                <span class="online">online</span>
+                <span>jan pulec · 2026</span>
+            </div>
+        </div>
+
         <header>
-        
+            <h3><i>bonnie21cz.github.com</i></h3>
         </header>
 
         <nav class="topmenu">
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="aboutme.html" class="selected">ABOUT ME</a></li>
-                <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="posts.html">BLOG</a></li>
-                <li><a href="fun.html">FUN</a></li>
-                <li><a href="links.html">LINKS</a></li>
+                <li><a href="index.html"><span class="tab-n">01:</span>home</a></li>
+                <li><a href="aboutme.html" class="selected"><span class="tab-n">02:</span>about me</a></li>
+                <li><a href="portfolio.html"><span class="tab-n">03:</span>portfolio</a></li>
+                <li><a href="posts.html"><span class="tab-n">04:</span>blog</a></li>
+                <li><a href="fun.html"><span class="tab-n">05:</span>fun</a></li>
+                <li><a href="links.html"><span class="tab-n">06:</span>links</a></li>
             </ul>
         </nav>
 
         <div class="container-in">
-
             <div class="articles">
                 <article>
                     <h2>O mě</h2>
@@ -39,39 +48,37 @@
                     <h3>Zájmy</h3>
                     Zajímám se o tvorbu, technologii, cybersecurity, IT, gaming, fikci, a hudbu. Někdy se moje zájmy
                     prolínají, jako například teď když dělám tuto stránku. (Tvorba a IT)
-                    <br>
-                    <h4>Hudba</h4>
-                    především miluji rock, z toho hlavně alt rock, shoegaze, hard rock, a (nu) metal. Také trošku elektronika
-                    (třeba pro to když na něčem pracuji - zejména Aphex Twin a C418.) Pro konkrétnější metrikum
-                    se
-                    podívejte do stránky "Fun", mám tam nastavený tracker přesně toho, co poslouchám.
-                    <br>
-                    <h4>Filmy a seriály</h4>
 
-                    <u>Moje nejoblíbenější filmy/seriály</u> <i style="color: rgb(88, 88, 88);">(Nezařazeno podle oblíbenosti)</i> <br>
-                    - Attack on Titan <br>
-                    - Dune <br>
-                    - Star wars <br>
-                    - Chainsaw man <br>
-                    - Arcane <br>
-                    - Stranger things <br>
-                    - Game of Thrones <br>
-                    - House of the Dragon <br>
-                    - Invincible
-                    <br>
+                    <h4>Hudba</h4>
+                    Především miluji rock, z toho hlavně alt rock, shoegaze, hard rock, a (nu) metal. Také trošku elektronika
+                    (třeba pro to když na něčem pracuji — zejména Aphex Twin a C418.) Pro konkrétnější metriku
+                    se podívejte do stránky "Fun", mám tam nastavený tracker přesně toho, co poslouchám.
+
+                    <h4>Filmy a seriály</h4>
+                    <i style="color: var(--text-dim);">Nezařazeno podle oblíbenosti</i> <br><br>
+                    — Attack on Titan <br>
+                    — Dune <br>
+                    — Star Wars <br>
+                    — Chainsaw Man <br>
+                    — Arcane <br>
+                    — Stranger Things <br>
+                    — Game of Thrones <br>
+                    — House of the Dragon <br>
+                    — Invincible
+
                     <h4>Hry</h4>
-                    <u>Moje nejoblíbenější Videohry</u> <i style="color: rgb(88, 88, 88);">(Nezařazeno podle oblíbenosti)</i> <br>
-                    - No man's sky (133h) <br>
-                    - Stellaris (1122h) <br>
-                    - Astroneer (196h)<br>
-                    - Kerbal Space Program (318h+) (Nejspíš i více) <br>
-                    - Geometry dash (25h+) (Nejspíš i více) <br>
-                    - Slime Rancher (37h) <br>
-                    - Mindustry (75h) <br>
-                    - Spore (Neurčito hodin) <br>
-                    - Space Engineers (356h) <br>
-                    - Roblox (odhadem 9000h+) <br>
-                    - Minecraft (odhadem 1200h+)
+                    <i style="color: var(--text-dim);">Nezařazeno podle oblíbenosti</i> <br><br>
+                    — No Man's Sky (133h) <br>
+                    — Stellaris (1122h) <br>
+                    — Astroneer (196h) <br>
+                    — Kerbal Space Program (318h+) <br>
+                    — Geometry Dash (25h+) <br>
+                    — Slime Rancher (37h) <br>
+                    — Mindustry (75h) <br>
+                    — Spore (neurčito hodin) <br>
+                    — Space Engineers (356h) <br>
+                    — Roblox (odhadem 9000h+) <br>
+                    — Minecraft (odhadem 1200h+)
                 </article>
             </div>
         </div>
@@ -80,7 +87,6 @@
             &copy; JAN PULEC 2026
         </footer>
     </div>
-
 
     <script src="js/hyperspace_pozadi.js"></script>
 </body>

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="cs">
 
 <head>
-    <title>Moje stránka</title>
+    <meta charset="UTF-8">
+    <title>Fun — bonnie21cz</title>
     <link rel="icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/mujstyl.css">
 </head>
 
@@ -11,16 +13,27 @@
     <canvas id="hyperspace"></canvas>
 
     <div class="container">
-        <header></header>
+
+        <div class="statusbar">
+            <span class="site-id">bonnie21cz.github.com</span>
+            <div class="sb-right">
+                <span class="online">online</span>
+                <span>jan pulec · 2026</span>
+            </div>
+        </div>
+
+        <header>
+            <h3><i>bonnie21cz.github.com</i></h3>
+        </header>
 
         <nav class="topmenu">
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="aboutme.html">ABOUT ME</a></li>
-                <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="posts.html">BLOG</a></li>
-                <li><a href="fun.html" class="selected">FUN</a></li>
-                <li><a href="links.html">LINKS</a></li>
+                <li><a href="index.html"><span class="tab-n">01:</span>home</a></li>
+                <li><a href="aboutme.html"><span class="tab-n">02:</span>about me</a></li>
+                <li><a href="portfolio.html"><span class="tab-n">03:</span>portfolio</a></li>
+                <li><a href="posts.html"><span class="tab-n">04:</span>blog</a></li>
+                <li><a href="fun.html" class="selected"><span class="tab-n">05:</span>fun</a></li>
+                <li><a href="links.html"><span class="tab-n">06:</span>links</a></li>
             </ul>
         </nav>
 
@@ -28,11 +41,13 @@
             <div class="articles">
                 <article>
                     <h2>Last.fm Statistiky</h2>
-                    <i>Všechny informace zde uvedené pochází z Last.fm API. Sledování začalo od 13. ledna 2026.<br>
+                    <i style="color: var(--text-dim);">
+                        Všechny informace zde uvedené pochází z Last.fm API. Sledování začalo od 13. ledna 2026.<br>
                         Snažil jsem se tam dát fotky i pro umělce a songy, ale to bohužel Last.fm API už nepodporuje.
                     </i>
                     <br><br>
                     <hr>
+
                     <h3>Co mi právě hraje/naposledy hrálo ve sluchátkách?</h3>
                     <div id="lastfm">
                         <img id="cover" alt="Album cover">
@@ -42,7 +57,7 @@
                         </div>
                     </div>
                     <br>
-                    <i style="color: rgb(88, 88, 88);">(Skladba se uloží jen po čtyř minutách přehrávání.)</i>
+                    <i style="color: var(--text-dim);">(Skladba se uloží jen po čtyř minutách přehrávání.)</i>
                     <br><br>
                     <hr>
 

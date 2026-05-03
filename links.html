@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="cs">
 
 <head>
-    <title>Moje stránka</title>
+    <meta charset="UTF-8">
+    <title>Links — bonnie21cz</title>
     <link rel="icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/mujstyl.css">
 </head>
 
@@ -12,44 +13,54 @@
     <canvas id="hyperspace"></canvas>
 
     <div class="container">
+
+        <div class="statusbar">
+            <span class="site-id">bonnie21cz.github.com</span>
+            <div class="sb-right">
+                <span class="online">online</span>
+                <span>jan pulec · 2026</span>
+            </div>
+        </div>
+
         <header>
-        
+            <h3><i>bonnie21cz.github.com</i></h3>
         </header>
 
         <nav class="topmenu">
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="aboutme.html">ABOUT ME</a></li>
-                <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="posts.html">BLOG</a></li>
-                <li><a href="fun.html">FUN</a></li>
-                <li><a href="links.html" class="selected">LINKS</a></li>
+                <li><a href="index.html"><span class="tab-n">01:</span>home</a></li>
+                <li><a href="aboutme.html"><span class="tab-n">02:</span>about me</a></li>
+                <li><a href="portfolio.html"><span class="tab-n">03:</span>portfolio</a></li>
+                <li><a href="posts.html"><span class="tab-n">04:</span>blog</a></li>
+                <li><a href="fun.html"><span class="tab-n">05:</span>fun</a></li>
+                <li><a href="links.html" class="selected"><span class="tab-n">06:</span>links</a></li>
             </ul>
         </nav>
 
         <div class="container-in">
-
             <div class="articles">
                 <article>
                     <h2>Kontakty</h2>
                     <hr>
                     <div class="linkdiv">
                         <img class="linkimg" src="img/Bluesky.png" alt="" height="16px">
-                        <a style="color: rgb(34, 163, 248);" href="https://bsky.app/profile/novaengineer.bsky.social" target="_blank"> Bluesky</a>
+                        <a href="https://bsky.app/profile/novaengineer.bsky.social" target="_blank">Bluesky</a>
                     </div>
                     <div class="linkdiv">
                         <img class="linkimg" src="img/Roblox.png" alt="" height="16px">
-                        <a style="color: rgb(34, 163, 248);" href="https://www.roblox.com/users/481304573/profile" target="_blank"> Roblox profil</a>
+                        <a href="https://www.roblox.com/users/481304573/profile" target="_blank">Roblox profil</a>
                     </div>
                     <div class="linkdiv">
                         <img class="linkimg" src="img/Github.png" alt="" height="16px">
-                        <a style="color: rgb(34, 163, 248);" href="https://github.com/Bonnie21CZ" target="_blank"> Github</a>
+                        <a href="https://github.com/Bonnie21CZ" target="_blank">Github</a>
                     </div>
                     <div class="linkdiv">
-                        <img class="linkimg" src="img/Discord.png" alt="" height="16px"width=16px> @nova_engineer
+                        <img class="linkimg" src="img/Discord.png" alt="" height="16px" width="16px">
+                        <span style="color: var(--text-dim); margin-left: 4px;">@nova_engineer</span>
                     </div>
                     <div class="linkdiv">
-                        <img class="linkimg" src="img/Proton.png" alt="" height="16px"> jan.pulec1@proton.me
+                        <img class="linkimg" src="img/Proton.png" alt="" height="16px">
+                        <span style="color: var(--text-dim); margin-left: 4px;">jan.pulec1@proton.me</span>
                     </div>
                 </article>
             </div>
@@ -59,7 +70,6 @@
             &copy; JAN PULEC 2026
         </footer>
     </div>
-
 
     <script src="js/hyperspace_pozadi.js"></script>
 </body>

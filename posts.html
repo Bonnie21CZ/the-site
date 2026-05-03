@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="cs">
 
 <head>
-    <title>Moje stránka</title>
+    <meta charset="UTF-8">
+    <title>Blog — bonnie21cz</title>
     <link rel="icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/mujstyl.css">
 </head>
 
@@ -12,52 +13,62 @@
     <canvas id="hyperspace"></canvas>
 
     <div class="container">
-        <header>
 
+        <div class="statusbar">
+            <span class="site-id">bonnie21cz.github.com</span>
+            <div class="sb-right">
+                <span class="online">online</span>
+                <span>jan pulec · 2026</span>
+            </div>
+        </div>
+
+        <header>
+            <h3><i>bonnie21cz.github.com</i></h3>
         </header>
 
         <nav class="topmenu">
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="aboutme.html">ABOUT ME</a></li>
-                <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="posts.html" class="selected">BLOG</a></li>
-                <li><a href="fun.html">FUN</a></li>
-                <li><a href="links.html">LINKS</a></li>
+                <li><a href="index.html"><span class="tab-n">01:</span>home</a></li>
+                <li><a href="aboutme.html"><span class="tab-n">02:</span>about me</a></li>
+                <li><a href="portfolio.html"><span class="tab-n">03:</span>portfolio</a></li>
+                <li><a href="posts.html" class="selected"><span class="tab-n">04:</span>blog</a></li>
+                <li><a href="fun.html"><span class="tab-n">05:</span>fun</a></li>
+                <li><a href="links.html"><span class="tab-n">06:</span>links</a></li>
             </ul>
         </nav>
 
         <div class="container-in">
-
             <div class="articles">
                 <article>
                     <h2>2026: rok linux desktopu?</h2>
                     <hr>
-                    <img width=300px height=200px src="img/linux.jpg" alt="">
-                    <br>
+                    <img width="300px" height="200px" src="img/linux.jpg" alt="" style="border-radius: 4px; border: 1px solid var(--border-hi); margin-bottom: 16px; display: block;">
                     Poslední dobou, obrovský počet odborníků říká, že 2026 může být zatím nejlepší rok pro linux
                     desktop. Proč ale najednou? Proč v roce 2026 a ne nikdy v minulosti? Proč nepoužívají lidi linux už
                     teď? Zde vám to řeknu.
+
                     <h3>Proč se už teď linux moc nepoužívá na desktopu?</h3>
-                    Toto má dvě strany. Jedna strana je slabá podpora linuxu některými aplikacemi a hrami (Např Adobe
-                    aplikace [které by jste stejně neměli používat], Office aplikace, League of legends, apod.), a také
-                    scaremongering - lidé si na sociálních sítí delají z linuxu vtipy, že např. změnění pozadí obrazovky
-                    vyžaduje znalosti v programování, což ve většině distrech zcela prostě není pravda. Zkrátka, lidé by
-                    raději používali windows než aby se starali o nějaký jiný OS.
+                    Toto má dvě strany. Jedna strana je slabá podpora linuxu některými aplikacemi a hrami (např. Adobe
+                    aplikace, Office aplikace, League of Legends, apod.), a také scaremongering — lidé si na sociálních
+                    sítích dělají z linuxu vtipy, že např. změnění pozadí obrazovky vyžaduje znalosti v programování,
+                    což ve většině distribucí zcela prostě není pravda. Zkrátka, lidé by raději používali Windows než
+                    aby se starali o jiný OS.
+
                     <h3>Proč se to v roce 2026 má změnit?</h3>
-                    <h4>1. Devoluce windows a kontroverze s Microsoplem. (microsoftem)</h4>
-                    od chvíle kdy vyšlo windows 11, lidé s tím měli problémy, zejména se soukromím, paywally, a AI
+
+                    <h4>1. Devoluce Windows a kontroverze s Microsoftem</h4>
+                    Od chvíle kdy vyšlo Windows 11, lidé s tím měli problémy, zejména se soukromím, paywally, a AI
                     integrací, včetně mně. To se poslední dobou jen zhoršuje a čím dál víc lidí (také včetně mě)
                     přecházejí na linux distribuce jako Mint nebo Pop! OS, které tyto problémy nemají.
+
                     <h4>2. Steam</h4>
                     Jeden z největších problémů s linuxem je to, že strašně dlouho nebyl vůbec vhodný pro jakýkoliv
-                    gaming, až do posledních pár let, kdy vyšel steam Proton, který povoluje hraní většinu Windows her
+                    gaming, až do posledních pár let, kdy vyšel Steam Proton, který povoluje hraní většinu Windows her
                     na Linuxu.
                     <br><br>
-                    K tomu ještě tento rok výjde Steam machine, což je nový PC/Konzole od Steamu který běží na SteamOS,
+                    K tomu ještě tento rok výjde Steam Machine, což je nový PC/Konzole od Steamu který běží na SteamOS,
                     postavený na Arch. Lidé doufají včetně mě, že toto donutí vývojáře podpořit linux, protože najednou
                     bude o hodně víc uživatelů linuxu.
-                    <br><br>
                 </article>
             </div>
         </div>
@@ -66,7 +77,6 @@
             &copy; JAN PULEC 2026
         </footer>
     </div>
-
 
     <script src="js/hyperspace_pozadi.js"></script>
 </body>
