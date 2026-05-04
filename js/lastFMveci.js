@@ -18,10 +18,10 @@ const coverEl = document.getElementById("cover");
 
 function timeAgo(unix) {
     const seconds = Math.floor(Date.now() / 1000 - unix);
-    if (seconds < 60) return "před chvílí";
-    if (seconds < 3600) return `před ${Math.floor(seconds / 60)} min`;
-    if (seconds < 86400) return `před ${Math.floor(seconds / 3600)} h`;
-    return `před ${Math.floor(seconds / 86400)} dny`;
+    if (seconds < 60) return "under a minute ago";
+    if (seconds < 3600) return `${Math.floor(seconds / 60)} minutes ago`;
+    if (seconds < 86400) return `${Math.floor(seconds / 3600)} hours ago`;
+    return `${Math.floor(seconds / 86400)} days ago`;
 }
 
 async function loadTrack() {
@@ -29,7 +29,7 @@ async function loadTrack() {
         const res = await fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${user}&api_key=${apiKey}&format=json&limit=1`);
         const data = await res.json();
         const track = data.recenttracks.track[0];
-        if (!track) { trackEl.textContent = "Žádná data."; return; }
+        if (!track) { trackEl.textContent = "No data"; return; }
 
         const artist = track.artist["#text"];
         const title = track.name;
@@ -41,13 +41,13 @@ async function loadTrack() {
         coverEl.style.display = "block";
 
         if (nowPlaying) {
-            timeEl.textContent = "🎧 teď hraje";
+            timeEl.textContent = "🎧 now playing";
         } else {
             const playedAt = track.date?.uts;
-            timeEl.textContent = playedAt ? `naposledy hrálo ${timeAgo(playedAt)}` : "";
+            timeEl.textContent = playedAt ? `last played ${timeAgo(playedAt)}` : "";
         }
     } catch {
-        trackEl.textContent = "Data se nenačetla. Refreshni stránku.";
+        trackEl.textContent = "Data didn't load. Refresh the page.";
     }
 }
 
@@ -82,11 +82,11 @@ async function loadTop(method, containerId, limit) {
             // 2. Dynamický text pro počet přehrání
             let playsLabel = "";
             if (method === "user.getTopAlbums") {
-                playsLabel = `přehráno ${plays} skladeb`;
+                playsLabel = `played ${plays} tracks`;
             } else if (method === "user.getTopArtists") {
-                playsLabel = `${plays} přehrání umělce`;
+                playsLabel = `played ${plays} times`;
             } else {
-                playsLabel = `${plays} přehrání`;
+                playsLabel = `${plays} plays`;
             }
 
             const el = document.createElement("div");
@@ -103,7 +103,7 @@ async function loadTop(method, containerId, limit) {
             container.appendChild(el);
         });
     } catch {
-        document.getElementById(containerId).textContent = "Data se nenačetla. Refreshni stránku.";
+        document.getElementById(containerId).textContent = "Data didn't load. Refresh the page.";
     }
 }
 
